@@ -43,15 +43,18 @@ After selecting the required resources, click **NEXT** to proceed.
 
 
  **8**. Once the application execution is started then the status gets changed into **Preparing, Pending, Sent, Running** state. The user has to wait for some time and refresh the page  to see the **INTERACTIVE ENDPOINTS** to access the interactive shell. get the **username** and **password** from the **STDOUT** tab and click on **Connect**.
- Scroll down and in the right corner there will be an option to connect with the **INTERACTIVE ENDPOINTS**
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/49cff85c-700b-499d-a90a-f98b180b76cf)
+ ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2263059e-9d4b-4b42-bb32-0716c3151eb6)
 
- **9**.To access the server CLI, run the copied command in Putty or PowerShell by replacing <USER> with given username and providing password. (username and password can be found in stdout tab). 
-  In the following image username is **aac** and password is **HSca1cgJcShv1bEalVaGgup5sPr04zYr**.
+    
 
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2263059e-9d4b-4b42-bb32-0716c3151eb6)
-   ![username](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/c9f2c01a-cd8c-4984-a4d9-f50dfec5b0f6)
-
+ **9**.To access the server CLI, run the command in Putty or PowerShell by replacing <USER> with given username and providing password. (username and password can be found in stdout tab). 
+  In the following image username is **aac** and password is **HSca1cgJcShv1bEalVaGgup5sPr04zYr**.<br>
+  Scroll down and in the right corner there will be an option to connect with the **INTERACTIVE ENDPOINTS**
+        ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/49cff85c-700b-499d-a90a-f98b180b76cf)
+  
+**10**. To access the server CLI, run the copied command in Putty or PowerShell by replacing <USER> with given username and providing password. (username and password can be found in stdout tab). 
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/fa5f5bd2-ef0e-4359-98f3-2042ed39fb9c)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/fe9001e3-9032-482d-9590-8d50bd9b0f3f)
 
  **10**. Once the work is done and to finish the workload Click on the "FINISH WORKLOAD" button and click on "Yes" to complete the workload.
    
