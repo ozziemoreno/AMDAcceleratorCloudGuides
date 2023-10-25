@@ -17,54 +17,49 @@
    ![New_workload](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/99cef9af-060a-43ab-a4fa-f3a56b6be130)
 
 
- **4**. Click on **Next** button available in the right corner.
+ **4**.Select Input Files. Upload any input file(s) which application will need to run. Click **+ Upload files**, and then drag the files into AAC, or click **Browse files** to open the Open file dialog window. Here uploading files is not required, hence click **NEXT** to proceed.
 
    ![Next](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/649cc131-bfd6-48ef-9e82-9f787ad1433d)
 
- **7**. Select the allowed run time. The number of GPUs should be 8. Here, we have selected the run time as 1 hour, number of GPU’s as 8 and telemetry is enabled and Click on **Next** button.
+ **5**. In the Resources page, Select the desired parameters. <br>
+ **(i)** Under node parameters,by default the **queue oversubscribe** option is **disabled**.<br>
+**(ii)** Under node parameters,by default the **telemetry** option is **enabled**. Enabling telemetry gives the performance values once the workload is finished. If not needed, the user can turn off the telemetry. <br>
+**(iii)** Under time parameters, there is an option for **maximum allowed runtime**; by default, the value is set to **1 hour**. The user can give their desired runtime. The maximum allowed runtime is **30 days**.<br>
+**(iv)** Select the number of GPU's required; by default, the number of GPU's is set to **8**.<br>
+After selecting the required resources, click **NEXT** to proceed.  
 
    ![8 GPUS](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/b48a0fb9-36c6-47d6-abfc-87a7bb4f55c9)
 
- **8**. Select the cluster with desired queue to run the job. In the following image **1CN128C8G1H_4RoCE_MI250_Ubuntu22 (gpu:mi250:8(S:0-1))** queue is selected and Click on **Next**.
+ **6**. In the compute page,Select the cluster with desired queue to run the job. In the following image **1CN128C8G2H_2IB_MI210_SLES15 (Pre-emptible)** queue is selected and Click on **Next** to continue.
   
-   ![queue](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/35ca8cc3-9bb8-45a8-83cd-925da07e1d5d)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ca15d5df-df2f-4c31-83e8-efba29305fdc)
 
- **9**. Review all the configurations selected and click on **Run Workload**.
+ **7**. Review all the configurations selected and click on **Run Workload**.
 
-   ![run1](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/192d4b5f-e4ff-4bc7-b47d-21b2a4426571)
-   <br/>
-   <br/>
-   ![run2](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/28dda06f-356b-4d30-a18f-a58233c9cbbd)
-   <br/>
-   <br/>
-   ![run3](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/2afdfebc-e830-4a3f-a712-197377636a0f)
-   <br/>
-   <br/>
-   ![run4](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/06d5b0a8-15d6-4542-8ea0-de66714ae229)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ba037494-0b4e-413e-80d7-e25abf72a880)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/d6fa92d5-2284-442b-883a-d666b72def80)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/4115d8e4-a3cc-4f64-8ccf-e0c5b9a2c771)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/8b8edfa9-38ed-4b80-ad04-45a05cc3f6ca)
 
- **10**. Once the application execution is started then the status gets changed into **Preparing, Pending, Sent, Running** state. The user has to wait to see the **INTERACTIVE ENDPOINTS** to access the interactive shell. get the **username** and **password** from the **STDOUT** tab and click on **Connect**.
- 
-   ![username and password](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/1a4447d2-3b33-4f9e-ab8e-5f4eea0fce66)
-   <br/>
-   <br/>
-   ![Connect](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/dc067924-f138-4565-a667-650abe89b1db)
 
-   
- **11**. Click on **Copy Shell Command** button, Open command prompt or Windows PowerShell and enter **username** and **password**.
-  In the following image username is **aac** and password is **irRSFzt7WoCpwoCKD5P58qWhv0sCPQ5Y**.
+ **8**. Once the application execution is started then the status gets changed into **Preparing, Pending, Sent, Running** state. The user has to wait for some time and refresh the page  to see the **INTERACTIVE ENDPOINTS** to access the interactive shell. get the **username** and **password** from the **STDOUT** tab and click on **Connect**.
+ Scroll down and in the right corner there will be an option to connect with the **INTERACTIVE ENDPOINTS**
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/49cff85c-700b-499d-a90a-f98b180b76cf)
 
-   ![copy](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/c8df9813-3326-40b2-9cb4-769ce7fd8e73)
-   <br/>
-   <br/>
+ **9**.To access the server CLI, run the copied command in Putty or PowerShell by replacing <USER> with given username and providing password. (username and password can be found in stdout tab). 
+  In the following image username is **aac** and password is **HSca1cgJcShv1bEalVaGgup5sPr04zYr**.
+
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2263059e-9d4b-4b42-bb32-0716c3151eb6)
    ![username](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/c9f2c01a-cd8c-4984-a4d9-f50dfec5b0f6)
 
 
- **12**. Once interactive shell access is verified Click on **FINISH WORKLOAD** button and click on **Yes** to complete the workload.
+ **10**. Once the work is done and to finish the workload Click on the "FINISH WORKLOAD" button and click on "Yes" to complete the workload.
    
    ![finish](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/5b70eb8d-553b-4742-965f-de40ce3ae7e8)
    <br/>
    <br/>
    ![yes](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/e309714c-63b4-4358-849e-54d9b65b7a16)
+
 
 
    
