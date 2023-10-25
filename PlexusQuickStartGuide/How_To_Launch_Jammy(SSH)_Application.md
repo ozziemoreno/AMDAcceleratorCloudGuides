@@ -42,21 +42,20 @@ After selecting the required resources, click **NEXT** to proceed.
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/8b8edfa9-38ed-4b80-ad04-45a05cc3f6ca)
 
 
- **8**. Once the application execution is started then the status gets changed into **Preparing, Pending, Sent, Running** state. The user has to wait for some time and refresh the page  to see the **INTERACTIVE ENDPOINTS** to access the interactive shell. get the **username** and **password** from the **STDOUT** tab and click on **Connect**.
- ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2263059e-9d4b-4b42-bb32-0716c3151eb6)
+ **8**. Once the application execution is started then the status gets changed into **Preparing, Pending, Sent, Running** state. 
+ The username and password can be found in **STDOUT**
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2263059e-9d4b-4b42-bb32-0716c3151eb6)
+ 
+ **9**.User has to wait for some time, refresh the page and scroll down to see the **INTERACTIVE ENDPOINTS** in the right corner. Click on **Connect**.
+ ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/49cff85c-700b-499d-a90a-f98b180b76cf)
 
-    
-
- **9**.To access the server CLI, run the command in Putty or PowerShell by replacing <USER> with given username and providing password. (username and password can be found in stdout tab). 
-  In the following image username is **aac** and password is **HSca1cgJcShv1bEalVaGgup5sPr04zYr**.<br>
-  Scroll down and in the right corner there will be an option to connect with the **INTERACTIVE ENDPOINTS**
-        ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/49cff85c-700b-499d-a90a-f98b180b76cf)
-  
-**10**. To access the server CLI, run the copied command in Putty or PowerShell by replacing <USER> with given username and providing password. (username and password can be found in stdout tab). 
+ **10**.To access the server CLI, copy the shell command and replace <USER> with given username and providing password. (username and password can be found in stdout tab). <br>
+ Here the username is **aac** and the command is **ssh -p 7004 aac@aac1.amd.com**
+ 
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/fa5f5bd2-ef0e-4359-98f3-2042ed39fb9c)
-![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/fe9001e3-9032-482d-9590-8d50bd9b0f3f)
+<br>
 
- **10**. Once the work is done and to finish the workload Click on the "FINISH WORKLOAD" button and click on "Yes" to complete the workload.
+ **11**. Once the work is done and to finish the workload Click on the **FINISH WORKLOAD** button and click on **Yes** to complete the workload.
    
    ![finish](https://github.com/gurumohan123/AMDAcceleratorCloudGuides/assets/137781570/5b70eb8d-553b-4742-965f-de40ce3ae7e8)
    <br/>
